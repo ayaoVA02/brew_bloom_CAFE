@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="./style.css">
     <title>Brew & Bloom Cafe</title>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Header ສ່ວນຫົວຂອງເວັບ -->
     <header>
         <nav>
             <div class="logo">Brew & Bloom</div>
@@ -23,303 +21,278 @@
             </ul>
         </nav>
     </header>
-
+    <!-- ສ່ວນຫນັາຫຼັກ -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ <span> Brew </span>& Bloom Cafe</h1>
-
+            <h1>ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ <span>Brew</span> & Bloom Cafe</h1>
             <a href="#menu" class="cta-button">ເບິ່ງເມນູຂອງພວກເຮົາ</a>
         </div>
     </section>
 
+
+    <!-- ສ່ວນການເລືອກເມນູ  -->
     <section id="menu" class="menu">
-            <h2 class="section-title fade-in">ເມນູຂອງພວກເຮົາ</h2>
+        <h2 class="section-title">ເມນູຂອງພວກເຮົາ</h2>
 
         <div class="category-list">
-           
-                <li><a href="#coffee-drinks">ເຄື່ອງດື່ມກາເຟ</a></li>
-             
-                <li><a href="#desserts">ເຂົ້າໜົມ  ແລະ ເຄັກ</a></li>
-                <li><a href="#breakfast">ອາຫານເຊົ້າ</a></li>
-                <li><a href="#snacks">ອາຫານວ່າງ</a></li>
-           
+            <li><a href="#coffee-drinks">ເຄື່ອງດື່ມກາເຟ</a></li>
+            <li><a href="#desserts">ເຂົ້າໜົມ ແລະ ເຄັກ</a></li>
+            <li><a href="#breakfast">ອາຫານເຊົ້າ</a></li>
+            <li><a href="#snacks">ອາຫານວ່າງ</a></li>
         </div>
-        <div class="container">
 
+
+        <!-- ສ່ວນເມນູຕ່າງໆ -->
+        <div class="container">
             <h3 class="menu-category" id="coffee-drinks">ເຄື່ອງດື່ມກາເຟ</h3>
             <div class="menu-grid">
-                <!-- Coffee Drinks -->
-                <!-- Coffee Drinks -->
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('espresso')">
                     <div class="menu-item-image">
                         <img src="./images/espresso.webp" alt="Espresso">
                     </div>
                     <div class="menu-item-content">
                         <h3>Espresso</h3>
                         <p>ກາເຟທີ່ເຂັ້ມຂຸ້ນຈາກເມັດກາເຟຄັດພິເສດ</p>
-                        <div class="price">35,000kip</div>
+                        <div class="price">35,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('cappuccino')">
                     <div class="menu-item-image">
                         <img src="./images/Cappuccino.jpeg" alt="Cappuccino">
                     </div>
                     <div class="menu-item-content">
                         <h3>Cappuccino</h3>
                         <p>ກາເຟປະສົມກັບນົມອຸ່ນ ແລະ ຟອງນົມ</p>
-                        <div class="price">45,000kip</div>
+                        <div class="price">45,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('latte')">
                     <div class="menu-item-image">
                         <img src="./images/Latte.jpeg" alt="Latte">
                     </div>
                     <div class="menu-item-content">
                         <h3>Latte</h3>
-                        <p>ກາເຟທີ່ມີນົມຫຼາຍກວ່າ espresso ເຮັດໃຫ້ລົດຊາດເບົາກວ່າ</p>
-                        <div class="price">50,000kip</div>
+                        <p>ກາເຟທີ່ມີນົມຫຼາຍກວ່າ espresso</p>
+                        <div class="price">50,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('icedcoffee')">
                     <div class="menu-item-image">
                         <img src="./images/ice_coffee.webp" alt="Iced Coffee">
                     </div>
                     <div class="menu-item-content">
                         <h3>Iced Coffee</h3>
                         <p>ກາເຟເຢັນສົດໆທີ່ເຮັດຈາກເມັດກາເຟຄັດພິເສດ</p>
-                        <div class="price">40,000kip</div>
+                        <div class="price">40,000 kip</div>
                     </div>
                 </div>
-                <!-- Coffee drinks here -->
-                <div class="menu-item fade-in">
+
+                <div class="menu-item" onclick="openModal('greentea')">
                     <div class="menu-item-image">
                         <img src="./images/greenTea.jpeg" alt="Green Tea">
                     </div>
                     <div class="menu-item-content">
                         <h3>Green Tea</h3>
-                        <p>ຊາຂຽວອົງກິດຄຸນນະພາບສູງ ມີປະໂຫຍດຕໍ່ສຸຂະພາບ</p>
-                        <div class="price">30,000kip</div>
+                        <p>ຊາຂຽວອົງກິດຄຸນນະພາບສູງ</p>
+                        <div class="price">30,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('blacktea')">
                     <div class="menu-item-image">
                         <img src="./images/blacktea.jpeg" alt="Black Tea">
                     </div>
                     <div class="menu-item-content">
                         <h3>Black Tea</h3>
                         <p>ຊາດຳທີ່ເຮັດຈາກໃບຊາຄັດພິເສດ</p>
-                        <div class="price">30,000kip</div>
+                        <div class="price">30,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('matchalatte')">
                     <div class="menu-item-image">
                         <img src="./images/matchalatte.jpeg" alt="Matcha Latte">
                     </div>
                     <div class="menu-item-content">
                         <h3>Matcha Latte</h3>
                         <p>ຊາ matcha ຄຸນນະພາບສູງປະສົມກັບນົມອຸ່ນ</p>
-                        <div class="price">55,000kip</div>
+                        <div class="price">55,000 kip</div>
                     </div>
                 </div>
-                <!-- Cold Drinks -->
-                <div class="menu-item fade-in" id="cold-drinks">
+
+                <div class="menu-item" onclick="openModal('icedchocolate')">
                     <div class="menu-item-image">
                         <img src="./images/iceChocolate.jpg" alt="Iced Chocolate">
                     </div>
                     <div class="menu-item-content">
                         <h3>Iced Chocolate</h3>
                         <p>ເຄື່ອງດື່ມເຢັນຈາກ chocolate ຄຸນນະພາບສູງ</p>
-                        <div class="price">45,000kip</div>
+                        <div class="price">45,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('orangejuice')">
                     <div class="menu-item-image">
-                        <img src="./images/orangeJuice.jpeg"
-                            alt="Fresh Orange Juice">
+                        <img src="./images/orangeJuice.jpeg" alt="Fresh Orange Juice">
                     </div>
                     <div class="menu-item-content">
                         <h3>Fresh Orange Juice</h3>
                         <p>ນ້ຳສົ້ມສົດຄັດຈາກສົ້ມເປັນແກ່ມ</p>
-                        <div class="price">40,000kip</div>
+                        <div class="price">40,000 kip</div>
                     </div>
                 </div>
-
             </div>
 
-            <!-- <h3 class="menu-category">ເຄື່ອງດື່ມຊາ</h3>
+            <h3 class="menu-category" id="desserts">ເຂົ້າໜົມ ແລະ ເຄັກ</h3>
             <div class="menu-grid">
-               
-            </div>
-
-            <h3 class="menu-category">ເຄື່ອງດື່ມເຢັນ</h3>
-            <div class="menu-grid">
-                
-            </div> -->
-
-            
-
-            
-
-            <h3 class="menu-category" id="desserts">ເຂົ້າໜົມ  ແລະ ເຄັກ</h3>
-            <div class="menu-grid">
-                <!-- Desserts here -->
-
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('chocolatecake')">
                     <div class="menu-item-image">
                         <img src="./images/cakesnack.jpeg" alt="Chocolate Cake">
                     </div>
                     <div class="menu-item-content">
                         <h3>Chocolate Cake</h3>
                         <p>ເຂົ້າໜົມ chocolate ຊັ້ນຫນາ ເສີບດ້ວຍນ້ຳຕານ</p>
-                        <div class="price">60,000kip</div>
+                        <div class="price">60,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('cheesecake')">
                     <div class="menu-item-image">
                         <img src="./images/chocolateCake.jpg" alt="Cheesecake">
                     </div>
                     <div class="menu-item-content">
                         <h3>Cheesecake</h3>
                         <p>ຊີສເຄັກສຳເລັດຮູບສະບູ່ນຳ້ຕານແດງ</p>
-                        <div class="price">65,000kip</div>
+                        <div class="price">65,000 kip</div>
                     </div>
                 </div>
             </div>
 
             <h3 class="menu-category" id="breakfast">ອາຫານເຊົ້າ</h3>
             <div class="menu-grid">
-                <!-- Breakfast items here -->
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('eggbhurgi')">
                     <div class="menu-item-image">
-                        <img src="./images/eggBhurji.jpeg" alt="Avocado Toast">
+                        <img src="./images/eggBhurji.jpeg" alt="Egg Bhurgi">
                     </div>
                     <div class="menu-item-content">
                         <h3>Egg Bhurgi</h3>
                         <p>ເຂົ້າຈີ່ຂະໜຽວທາດ້ວຍ avocado ແລະ ໄຂ່</p>
-                        <div class="price">65,000kip</div>
+                        <div class="price">65,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('hashbrown')">
                     <div class="menu-item-image">
-                        <img src="./images/HashBrown.jpg" alt="Pancakes">
+                        <img src="./images/HashBrown.jpg" alt="Hash Brown">
                     </div>
                     <div class="menu-item-content">
                         <h3>Hash Brown</h3>
                         <p>ເຂົ້າຈີ່ທອງຫມາກໄມ້ເສີບດ້ວຍນ້ຳຕານ maple</p>
-                        <div class="price">75,000kip</div>
+                        <div class="price">75,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('salad')">
                     <div class="menu-item-image">
-                        <img src="./images//fruits.jpeg" alt="Salad">
+                        <img src="./images/fruits.jpeg" alt="Fresh Salad">
                     </div>
                     <div class="menu-item-content">
                         <h3>Fresh Salad</h3>
                         <p>ສະຫຼັດສົດຈາກຜັກທີ່ຄັດເລືອກຢ່າງດີ</p>
-                        <div class="price">80,000kip</div>
+                        <div class="price">80,000 kip</div>
                     </div>
                 </div>
             </div>
 
             <h3 class="menu-category" id="snacks">ອາຫານວ່າງ</h3>
             <div class="menu-grid">
-                <!-- Snacks here -->
-                <!-- Snacks -->
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('croissant')">
                     <div class="menu-item-image">
-                        <img src="./images/Croissant.jpeg"
-                            alt="Croissant">
+                        <img src="./images/Croissant.jpeg" alt="Croissant">
                     </div>
                     <div class="menu-item-content">
                         <h3>Croissant</h3>
-                        <p>ເຂົ້າຈີ່ຝຣັ່ງທີ່ເຮັດດ້ວຍເບີແລະມີຊັ້ນທີ່ພຽງພໍ</p>
-                        <div class="price">45,000kip</div>
+                        <p>ເຂົ້າຈີ່ຝຣັ່ງທີ່ເຮັດດ້ວຍເບີ</p>
+                        <div class="price">45,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('cookie')">
                     <div class="menu-item-image">
-                        <img src="./images/Chocolate_Chip_Cookies_sob.jpg"
-                            alt="Chocolate Chip Cookie">
+                        <img src="./images/Chocolate_Chip_Cookies_sob.jpg" alt="Chocolate Chip Cookie">
                     </div>
                     <div class="menu-item-content">
                         <h3>Chocolate Chip Cookie</h3>
                         <p>ຄຸກກີ້ chocolate chip ທີ່ເຮັດສົດໆທຸກໆມື້</p>
-                        <div class="price">35,000kip</div>
+                        <div class="price">35,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('muffin')">
                     <div class="menu-item-image">
-                        <img src="./images/blueberry-muffin.jpg"
-                            alt="Muffin">
+                        <img src="./images/blueberry-muffin.jpg" alt="Blueberry Muffin">
                     </div>
                     <div class="menu-item-content">
                         <h3>Blueberry Muffin</h3>
                         <p>ມັຟຟິນ blueberry ທີ່ເຮັດສົດໆທຸກໆມື້</p>
-                        <div class="price">40,000kip</div>
+                        <div class="price">40,000 kip</div>
                     </div>
                 </div>
 
-                <div class="menu-item fade-in">
+                <div class="menu-item" onclick="openModal('cinnamonroll')">
                     <div class="menu-item-image">
-                        <img src="./images/cinnamon_buns_10634_16x9.jpg"
-                            alt="Cinnamon Roll">
+                        <img src="./images/cinnamon_buns_10634_16x9.jpg" alt="Cinnamon Roll">
                     </div>
                     <div class="menu-item-content">
                         <h3>Cinnamon Roll</h3>
                         <p>ເຂົ້າຈີ່ມັນຕົ້ນທີ່ມີລົດຊາດຫອມຂຽວ</p>
-                        <div class="price">55,000kip</div>
+                        <div class="price">55,000 kip</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- ສາວນກ໋ຽວກັບເຮົາ -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text fade-in">
+                <div class="about-text">
                     <h2>ກ່ຽວກັບເຮົາ</h2>
-                    <p>Brew & BLoom ເປັນຮ້ານກາເຟທີ່ກໍ້ຕັ້ງຂຶ້ນດ້ວຍຄວາມຫຼົງໄຫຼໃນກາເຟຄຸນນະພາບສູງ ແລະ ການບໍລິການທີ່ອົບອຸ່ນ
+                    <p>Brew & Bloom ເປັນຮ້ານກາເຟທີ່ກໍ້ຕັ້ງຂຶ້ນດ້ວຍຄວາມຫຼົງໄຫຼໃນກາເຟຄຸນນະພາບສູງ ແລະ ການບໍລິການທີ່ອົບອຸ່ນ
                         ເຮົາເລືອກໃຊ້ສະເພາະເມັດກາເຟພຣີມ້ຽມທີ່ຄັດສັນມາຢ່າງດີ</p>
                     <p>ດ້ວຍປະສົບການຫຼາຍກ່ວາ 10ປີ ໃນວົງການກາເຟ ເຮົາໃສ່ໃຈທຸກລາຍລະອຽດຕັ້ງແຕ່ການຄັດເລືອກເມັດກາເຟ ການຂົ້ວ ແລະ
                         ການຊົງ ເພື່ອມອບປະສົບການການດື່ມກາເຟທີ່ດີທີ່ສຸດໃຫ້ກັບລູກຄ້າທຸກທ່ານ</p>
                     <p>ມາເປັນສ່ວນໜຶ່ງຂອງຄອບຄົວ Brew & Bloom ແລະ ສໍາພັດຄວາມສຸກໃນທຸກຈິບ!</p>
                 </div>
-                <div class="about-image fade-in">
+                <div class="about-image">
                     <img src="./images/cafeHouse.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ສ່ວນຕິດຕໍ່ເຮົາ -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">ຕິດຕໍ່ພວກເຮົາ</h2>
             <div class="contact-content">
-                <div class="contact-info fade-in">
+                <div class="contact-info">
                     <h3>ຂໍ້ມູນຕິດຕໍ່</h3>
-                    <p>📞 020 98009597 </p>
+                    <p>📞 020 98009597</p>
                     <p>📞 020 9999 9990</p>
                     <p>📧 brewBloom1@gmail.com</p>
                     <p>🕒 ເປີດທຸກມື້ 09:00 - 22:00</p>
+                    <p>📍 ດອນກອຍ, ສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ</p>
 
                     <h3 style="margin-top: 2rem;">ຕິດຕາມເຮົາໄດ້ທີ່</h3>
                     <p>📘 Facebook: @BrewAndBloomCafe</p>
                     <p>📷 Instagram: @brewandbloom</p>
                     <p>🐦 Twitter: @brewbloom</p>
                 </div>
-                <div class="contact-form fade-in">
+                <div class="contact-form">
                     <h3>ສົ່ງຂໍ້ຄວາມເຖິງເຮົາ</h3>
                     <form id="contactForm">
                         <div class="form-group">
@@ -341,11 +314,27 @@
         </div>
     </section>
 
+
+    <!-- ສ່ວນສຸດທ້າຍຂອງເວັບ ຫຼື ສ່ວນຕີນຂອງເວົຍໄຊ -->
     <footer>
         <p>&copy; 2025 Brew & Bloom Café. ສະຫງວນລິຂະສິດທຸກປະການ</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Modal  ຫຼື ການສະແດງ POPUP SHOW-->
+    <div id="menuModal" class="modal" onclick="closeModalOnOutside(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <div id="modalPrice" class="modal-price"></div>
+                <p id="modalDescription" class="modal-description"></p>
+                <div class="modal-details" id="modalDetails"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
